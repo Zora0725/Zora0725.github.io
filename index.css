@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+.main-header {
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);   
+    padding: 20px;
+}
+
+.main-header .main-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-header .main-nav a {
+    font-size: 21px;
+    text-decoration: none;
+    color: #666;
+    padding: 5px 1em;
+    position: relative;
+    transform: translatey(0px);
+    transition: 0.3s;
+}
+
+.main-header .main-nav a:hover {
+    transform: translatey(-10px);
+}
+
+.main-header .main-nav a:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border-bottom: 1px solid #333;
+    transition: 0.3s;
+}
+
+.main-header .main-nav a:hover:after {
+    left: 0;
+    right: 0;
+}
+
+
+/* section banner */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(115deg, #d6e4e5 50%, transparent 50%) center center / 100% 100%,
+        url("./img/joshua-aragon-EaB4Ml7C7fE-unsplash.jpg") right center / auto 75%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.banner-text {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner-text h1 {
+    font-size: 70px;
+    border-bottom: 1px solid #333;
+}
+
+.banner-text h2 {
+    font-size: 50px;
+}
+
+.banner-text p {
+    font-size: 20px;
+}
